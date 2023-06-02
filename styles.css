@@ -271,9 +271,6 @@ i {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
 }
-.logo-hamburger {
-    
-}
 .logo-image {
     width: 100px;
 }
@@ -389,6 +386,8 @@ i {
     padding: 15px;
 }
 .gallery-preview {
+    display: flex;
+    align-items: center;
     margin:0 15px;
     position:relative;
     font-family:verdana, arial, sans-serif;
@@ -539,9 +538,11 @@ i {
 }
 #node {
     -ms-grid-column: span 1;
+    grid-column: auto;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
     grid-column-end: span 1;
+    grid-row: auto;
     -ms-grid-row: span 1;
     grid-row-start: span 1;
     -ms-grid-row-span: 1;
@@ -847,10 +848,8 @@ img {
 .policy-info {
     margin-bottom: 25px;
 }
-.policy-description {
-
-}
 #ScrollToTop {
+    display: none;
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -885,6 +884,21 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.map-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
 }
 .hidden-on-pc {
     display: none;
@@ -940,9 +954,6 @@ img {
         align-items: center;
         cursor: pointer;
     }
-    .burger {
-        
-    }
     .paragraph_l {
         width: 90%;
     }
@@ -976,9 +987,6 @@ img {
         border-radius: 5px;
         padding: 15px 20px;
         margin-bottom: 5px;
-    }
-    .page-wrapper {
-        
     }
     .logo-image {
         width: 100px;
@@ -1022,6 +1030,9 @@ img {
     }
     .info-banner-content {
         padding: 0;
+    }
+    .footer-links {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 991px) {

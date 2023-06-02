@@ -40,7 +40,7 @@
                         <img src="./media/logo.png" loading="lazy" sizes="(max-width: 479px) 25vw, (max-width: 767px) 100px, 150px" srcset="./media/logo.png 500w, ./media/logo.png 800w, ./media/logo.png 1080w, ./media/logo.png 1600w, ./media/logo.png 2000w, ./media/logo.png 2048w" alt class="logo-image">
                     </a>
                     <div class="social-wrapper">
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="https://www.youtube.com/@HighClassDetails-lh8uq" target="_blank" class="social-link">
                             <div class="icon-embed">
                                 <i class="fa-brands fa-youtube fa-xl"></i>
                             </div>
@@ -118,7 +118,7 @@
                 <div class="spacer hidden-on-pc"></div>
                 <div class="page-info-content">
                     <div>Ruben Melnik</div>
-                    <div class="date">April 27, 2023</div>
+                    <div class="date">June 1, 2023</div>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
         <div class="standard-page">
             <div class="primary-page">
                 <div class="primary-page-info">
-                    <img src="./media/header2.png" loading="eager" alt="" class="image" style="max-height: 500px;">
+                    <img src="./media/header2.png" onerror="if (this.src != './media/error.png') this.src = './media/error.png';" loading="eager" alt="" class="image" style="max-height: 500px;">
                     <div class="page-banner">
                         <div class="headline">
                             <div class="icon-embed less-right">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="div-block-40"></div>
-                <div class="gallery-preview">
+                <div class="gallery-preview" style="display: none;">
                     <div class="gallery-slideshow">
                         <div class="wrapper">
                             <i id="left" class="fa-solid fa-angle-left"></i>
@@ -168,6 +168,9 @@
                             <i id="right" class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21972.82216948526!2d-82.10368172744684!3d35.04974915622356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8857782d689ab07d%3A0x6766930afcb9bc57!2sInman%2C%20SC%2029349!5e0!3m2!1sen!2sus!4v1685662023033!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -351,9 +354,9 @@
             <img src="./media/logo.png" loading="lazy" sizes="(max-width: 479px) 25vw, (max-width: 767px) 100px, 150px" srcset="./media/logo.png 500w, ./media/logo.png 800w, ./media/logo.png 1080w, ./media/logo.png 1600w, ./media/logo.png 2000w, ./media/logo.png 2048w" alt class="logo-image">
         </a>
         <div class="footer-social-wrapper">
-            <a href="#comingsoon" target="_blank" class="social-link">
+            <a href="https://www.youtube.com/@HighClassDetails-lh8uq" target="_blank" class="social-link">
                 <div class="icon-embed">
-                    <i class="fa-brands fa-x fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
                 </div>
             </a>
             <a href="https://www.facebook.com/profile.php?id=100092723206772" target="_blank" class="social-link">
@@ -368,7 +371,7 @@
             </a>
         </div>
         <p class="paragraph">This website was made with personal care in mind. View the policy page <a href="./policy.html">here.</a></p>
-        <div style="display: flex; flex-direction: row;">
+        <div class="footer-links">
             <a href="tel:916-508-5869" class="header-link w-inline-block" style="padding: 0 30px;">
                 <div class="icon-embed">
                     <i class="fa-solid fa-phone fa-xl"></i>
@@ -389,9 +392,11 @@
             </a>
         </div>
     </div>
-    <button id="ScrollToTop">
+    <button onclick="topFunction()" id="ScrollToTop">
         <i class="fa-solid fa-arrow-up fa-xl" style="margin-top: 0;"></i>
     </button>
     <script src="./index.js"></script>
+    <script src="./photos.js"></script>
+    <script src="./form.js"></script>
   </body>
 </html>
