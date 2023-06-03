@@ -179,29 +179,32 @@
         <h1>Contact Us</h1>
         <div class="spacer _15px hidden-on-mobile"></div>
         <div style="max-width: 700px; text-indent: 45px;">If you would like to place an order, please fill out this form here, this form is for orders & questions. If you prefer you may email us at <a href="mailto:highclassdetails07@gmail.com">highclassdetails07@gmail.com</a> or call us at <a href="tel:916-508-5869">916-508-5869.</a> Please read our policies before entering in any information into this website!!</div>
-        <form class="contact-form" action="form.php">
+        <form class="contact-form" action="https://formsubmit.co/highclassdetails07@email.com" method="POST">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
             <div class="dbl-field">
                 <div class="field">
-                    <input class="text-input" type="text" name="name" placeholder="Name (eg. John Doe)">
+                    <input class="text-input" type="text" name="Name" placeholder="Name (eg. John Doe)">
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="field">
-                    <input class="text-input" type="text" name="email" placeholder="Email (example@address.com)">
+                    <input class="text-input" type="text" name="Email" placeholder="Email (example@address.com)">
                     <i class="fas fa-envelope"></i>
                 </div>
             </div>
             <div class="dbl-field">
                 <div class="field">
-                    <input class="text-input" type="text" name="phone" placeholder="Phone (eg. (123)123-4567)">
+                    <input class="text-input" type="text" name="Phone" placeholder="Phone (eg. (123)123-4567)">
                     <i class="fas fa-phone"></i>
                 </div>
                 <div class="field">
-                    <input class="text-input" type="text" name="zipcode" placeholder="Zip (50505)">
+                    <input class="text-input" type="text" name="Zipcode" placeholder="Zip (50505)">
                     <i class="fas fa-location-pin"></i>
                 </div>
             </div>
             <div class="message">
-                <textarea class="message-input" placeholder="Write your message" name="message"></textarea>
+                <textarea class="message-input" placeholder="Write your message" name="Message"></textarea>
                 <i class="fas fa-message"></i>
               </div>
               <div class="spacer _15px"></div>
@@ -397,6 +400,6 @@
     </button>
     <script src="./index.js"></script>
     <!--script src="./photos.js"></script-->
-    <script src="./form.js"></script>
+    <!--script src="./form.js"></script-->
   </body>
 </html>
