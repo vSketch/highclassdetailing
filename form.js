@@ -2,7 +2,6 @@ const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
 form.onsubmit = (e)=>{
   e.preventDefault();
-  let formData = new FormData(form);
   statusTxt.style.color = "#0082e6";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Sending your message...";
@@ -24,7 +23,6 @@ form.onsubmit = (e)=>{
       form.classList.remove("disabled");
     }
   }
-  let result = await response.json();
-  alert(result.message);
+  let formData = new FormData(form);
   xhr.send(formData);
 }
