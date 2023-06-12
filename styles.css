@@ -334,7 +334,8 @@ i {
     max-height: 600px;
     min-height: 46vh;
     background-image: url(./media/header1.png);
-    background-position: center 30%;
+    background-position: center;
+    background-size: 100%;
 }
 .page-info {
     display: flex;
