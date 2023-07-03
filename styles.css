@@ -334,10 +334,11 @@ i {
     max-height: 600px;
     min-height: 46vh;
     background-image: url(./media/header1.png);
-    background-position: center;
+    background-position: center 53%;
     background-size: 100%;
+    background-color: grey;
+    background-blend-mode: multiply;
 }
-
 .page-info {
     display: flex;
     flex-direction: row;
@@ -385,6 +386,7 @@ i {
 }
 .page-banner {
     width: 100%;
+    height: 100%;
     padding: 15px;
 }
 .gallery-preview {
@@ -996,6 +998,10 @@ img {
     }
     .hidden-on-mobile {
         display: none;
+    }
+    .page-header {
+        background-size: 150%;
+        background-position-x: 30%;
     }
     .secondary-column {
         grid-row-gap: 30px;
