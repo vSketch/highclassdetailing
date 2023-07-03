@@ -336,7 +336,7 @@ i {
     background-image: url(./media/header1.png);
     background-position: center 53%;
     background-size: 100%;
-    background-color: grey;
+    background-color: #adadad;
     background-blend-mode: multiply;
 }
 .page-info {
