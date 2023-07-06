@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e883126f4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="header">
@@ -110,26 +111,26 @@
     <div class="page-wrapper">
         <div class="page-header">
             <div class="page-info">
-                <div class="page-info-content">
+                <div class="page-info-content" data-aos="fade-right" data-aos-delay="250" data-aos-duration="750">
                     <h1 style="font-size: 48px; line-height: normal;">High Class Detailing</h1>
                     <div class="spacer _15px hidden-on-mobile"></div>
                     <div>Where our services fly past your expectation</div>
                 </div>
                 <div class="spacer hidden-on-pc"></div>
-                <div class="page-info-content">
+                <div class="page-info-content" data-aos="fade-left" data-aos-delay="250" data-aos-duration="750">
                     <div>Ruben Melnik</div>
                     <div class="date">June 1, 2023</div>
                 </div>
             </div>
         </div>
         <div class="w-spacer">
-            <h1>Your car, in great hands.   </h1>
+            <h1 data-aos="fade-in">Your car, in great hands.</h1>
         </div>
         <div class="standard-page">
             <div class="primary-page">
                 <div class="primary-page-info">
                     <img src="./media/header2.png" onerror="if (this.src != './media/error.png') this.src = './media/error.png';" loading="eager" alt="" class="image" style="max-height: 500px;">
-                    <div class="page-banner">
+                    <div class="page-banner" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
                         <div class="headline">
                             <div class="icon-embed less-right">
                                 <i class="fa-solid fa-circle-info fa-xl"></i>
@@ -175,37 +176,33 @@
             </div>
         </div>
     </div>
-    <div class="contact-form-wrapper" id="main-form">
+    <div class="contact-form-wrapper" id="main-form" data-aos="fade-in" data-aos-delay="200" data-aos-duration="750">
         <h1>Contact Us</h1>
         <div class="spacer _15px hidden-on-mobile"></div>
         <div style="max-width: 700px; text-indent: 45px;">If you would like to place an order, please fill out this form here, this form is for orders & questions. If you prefer you may email us at <a href="mailto:highclassdetails07@gmail.com">highclassdetails07@gmail.com</a> or call us at <a href="tel:916-508-5869">916-508-5869.</a> Please read our policies before entering in any information into this website!!</div>
-        <form class="contact-form" action="https://formsubmit.co/highclassdetails07@gmail.com" method="POST">
-            <input type="text" name="_honey" style="display: none;">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-            <input type="hidden" name="_next" value="https://highclassdetails.net/success.html">
+        <form class="contact-form" action="https://formsubmit.co/nineadvise@email.com" method="POST">
             <div class="dbl-field">
                 <div class="field">
-                    <input class="text-input" type="text" name="Name" placeholder="Name (eg. John Doe)" required>
+                    <input class="text-input" type="text" name="name" placeholder="Name (eg. John Doe)" required>
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="field">
-                    <input class="text-input" type="text" name="Email" placeholder="Email (example@address.com)" required>
+                    <input class="text-input" type="text" name="email" placeholder="Email (example@address.com)" required>
                     <i class="fas fa-envelope"></i>
                 </div>
             </div>
             <div class="dbl-field">
                 <div class="field">
-                    <input class="text-input" type="text" name="Phone" placeholder="Phone (eg. (123)123-4567)" required>
+                    <input class="text-input" type="text" name="phone" placeholder="Phone (eg. (123)123-4567)" required>
                     <i class="fas fa-phone"></i>
                 </div>
                 <div class="field">
-                    <input class="text-input" type="text" name="Zipcode" placeholder="Zip (50505)" required>
+                    <input class="text-input" type="text" name="zipcode" placeholder="Zip (50505)" required>
                     <i class="fas fa-location-pin"></i>
                 </div>
             </div>
             <div class="message">
-                <textarea class="message-input" placeholder="Write your message" name="Message"></textarea>
+                <textarea class="message-input" placeholder="Write your message" name="message"></textarea>
                 <i class="fas fa-message"></i>
               </div>
               <div class="spacer _15px"></div>
@@ -218,9 +215,9 @@
     </div>
     <div class="other-info-wrapper">
         <div class="div-block-19">
-            <div class="pricing-healine h2">Schedule</div>
+            <div class="pricing-healine h2" data-aos="fade-down">Schedule</div>
             <div class="spacer _15px"></div>
-            <div class="schedule-wrapper">
+            <div class="schedule-wrapper" data-aos="fade-in">
                 <div class="schedule" id="hours">
                     <div class="schedule-times">
                         <div class="pricing-headline h3">Hours</div>
@@ -239,9 +236,9 @@
             </div>
         </div>
         <div class="div-block-19">
-            <div class="pricing-healine h2">Q&As</div>
+            <div class="pricing-healine h2" data-aos="fade-down">Q&As</div>
             <div class="spacer _15px"></div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">What is mobile detailing?</div>
@@ -251,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">What services does a mobile detailing business offer?</div>
@@ -261,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">How long does a typical mobile detailing service take?</div>
@@ -271,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">Are mobile detailing services expensive?</div>
@@ -281,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">Can I book a mobile detailing service for multiple vehicles?</div>
@@ -291,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">What products and equipment do mobile detailers use?</div>
@@ -301,7 +298,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">Is mobile detailing environmentally friendly?</div>
@@ -311,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">How often should I have my vehicle detailed?</div>
@@ -321,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">Is it necessary to be present during the mobile detailing service?</div>
@@ -331,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">How can I book a mobile detailing service?</div>
@@ -341,7 +338,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qaas-wrapper">
+            <div class="qaas-wrapper" data-aos="fade-in">
                 <div class="qaas" id="q&a">
                     <div class="qaas-question">
                         <div class="pricing-headline h3">How can I pay?</div>
@@ -402,5 +399,13 @@
     <script src="./index.js"></script>
     <!--script src="./photos.js"></script-->
     <!--script src="./form.js"></script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        delay: 25,
+        duration: 500, 
+        once: true,
+    });
+  </script>
   </body>
 </html>

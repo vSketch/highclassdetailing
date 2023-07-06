@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e883126f4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="header">
@@ -109,10 +110,10 @@
     </div>
     <div class="page-wrapper">
         <div class="spacer _15px"></div>
-        <div class="text-block-2">Prices may change based on vehicle size and condition.</div>
+        <div class="text-block-2" data-aos="fade-in" data-aos-duration="1500">Prices may change based on vehicle size and condition.</div>
         <div class="spacer _15px"></div>
         <div class="package-block">
-            <div class="package-block-list">
+            <div class="package-block-list" data-aos="fade-up">
                 <div>
                     <div class="div-block-13">
                         <div class="div-block-14">
@@ -152,7 +153,7 @@
                     <div>Order</div>
                 </a>
             </div>
-            <div class="package-block-list" id="most-popular">
+            <div class="package-block-list" id="most-popular" data-aos="fade-up" data-aos-delay="250">
                 <div>
                     <div class="div-block-13">
                         <div class="div-block-14">
@@ -194,7 +195,7 @@
                     <div>Order</div>
                 </a>
             </div>
-            <div class="package-block-list">
+            <div class="package-block-list" data-aos="fade-up" data-aos-delay="500">
                 <div>
                     <div class="div-block-13">
                         <div class="div-block-14">
@@ -281,5 +282,13 @@
         <i class="fa-solid fa-arrow-up fa-xl" style="margin-top: 0;"></i>
     </button>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        delay: 25,
+        duration: 500, 
+        once: true,
+    });
+  </script>
   </body>
 </html>
