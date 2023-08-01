@@ -826,7 +826,6 @@ img {
     font-size: 20px;
 }
 .button-area button {
-    font-size: 18px;
     border: none;
     color: #000;
     cursor: pointer;
@@ -835,6 +834,12 @@ img {
     padding: 13px 25px;
     width: 100%;
     font-size: 16px;
+    transition: all 2s ease;
+}
+.button-area button:hover {
+    border-radius: 105px;
+    background: #FFF;
+    transform: scale(103%);
 }
 .button-area span {
     color: #FFF;
@@ -865,6 +870,7 @@ img {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 1s ease;
     z-index: 4;
 }
 .h2 {
@@ -1106,6 +1112,9 @@ img {
     }
     .carousel img{
         width: calc(100% / 1);
+    }
+    .primary-page-info .image {
+        max-height: 300px;
     }
 }
 @media screen and (max-width: 767px) {
