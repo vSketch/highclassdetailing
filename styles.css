@@ -553,11 +553,7 @@ i {
     grid-row-end: span 1;
 }
 .image {
-    position: static;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
+    position: relative;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1115,6 +1111,9 @@ img {
     }
     .primary-page-info .image {
         max-height: 300px;
+    }
+    .policy-info-wrapper {
+        margin: 0 30px;
     }
 }
 @media screen and (max-width: 767px) {
