@@ -712,7 +712,11 @@ img {
     font-size: 16px;
     border: 1px solid #FFF;
 }
-.package-wrapper{
+.about-wrapper {
+    padding-top: 75px;
+    margin-top: -75px;
+}
+.about2-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -724,8 +728,8 @@ img {
     overflow: hidden;
     perspective: clamp(400px, 100vw, 1000px);
 }
-.package-wrapper::before,
-.package-wrapper::after {
+.about2-wrapper::before,
+.about2-wrapper::after {
   content: "";
   position: fixed;
   z-index: 10;
@@ -733,11 +737,11 @@ img {
   right: 0;
   height: 30vh;
 }
-.package-wrapper::before {
+.about2-wrapper::before {
   top: 0;
   background: linear-gradient(5deg, rgba(0,0,0,0) 30%, #000);
 }
-.package-wrapper::after {
+.about2-wrapper::after {
   bottom: 0;
   background: linear-gradient(-5deg, #000, rgba(0,0,0,0) 70%);
 }
